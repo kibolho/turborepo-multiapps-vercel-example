@@ -10,7 +10,7 @@ export default function Store() {
   return (
     <div className="container">
       <h1 className="title">
-        Store <br />
+        {process.env["NEXT_PUBLIC_TITLE"] ?? "Store"} <br />
         <span>Kitchen Sink</span>
       </h1>
       <CounterButton />
